@@ -1,5 +1,7 @@
 import React from 'react'
 import './vertslider.css'
+import banner from "../../assets/banner.png"
+import cap2 from "../../assets/cap2.png"
 
 const VertSlider = () => {
     const sliderData = [
@@ -7,19 +9,19 @@ const VertSlider = () => {
             id: 1,
             title: "Classic Capsule ®",
             description: "Classic Capsule® boasts refined aesthetics and a modern interior, creating an intimate retreat in a desert landscape.",
-            backgroundImage: "src/assets/banner.png"
+            backgroundImage: banner
         },
         {
             id: 2,
             title: "TerraceCapsule ®",
             description: "The most prestige capsule with the biggest terrace and jacuzzi with an amazing view of Los Angeles.",
-            backgroundImage: "src/assets/cap2.png"
+            backgroundImage: cap2
         },
         {
             id: 3,
             title: "DesertCapsule ®",
             description: "With its striking architecture and upscale amenities, Desert Capsule® offers an exclusive retreat in the heart of the desert.",
-            backgroundImage: "src/assets/banner.png"
+            backgroundImage: banner
         }
     ];
 

@@ -1,5 +1,8 @@
 import React from "react";
 import './hslider.css'
+import cap1Square from "../../assets/cap1-square.jpg"
+import cap2Square from "../../assets/cap2-square.jpg"
+import cap3Square from "../../assets/cap3-square.jpg"
 
 const HSlider = () => {
   const sliderData = [
@@ -7,7 +10,7 @@ const HSlider = () => {
       id: 1,
       title: "Enjoy the view through—the wide panoramic glass window",
       description: "Get closer to the desert nature than ever before and admire this unique, breathtaking landscape.",
-      image: "src/assets/cap3-square.jpg",
+      image: cap3Square,
       currentPage: "01",
       totalPages: "02"
     },
@@ -15,7 +18,7 @@ const HSlider = () => {
       id: 2,
       title: "Sound of silence — out of the city rush with completely privacy",
       description: "Here, every whisper of nature recharges your soul——your sanctuary of solitude awaits.",
-      image: "src/assets/cap2-square.jpg",
+      image: cap2Square,
       currentPage: "02",
       totalPages: "03"
     },
@@ -23,7 +26,7 @@ const HSlider = () => {
       id: 3,
       title: "Relax yourself in——Wooden Jacuzzi",
       description: "Let the natural textures and gentle bubbles transport you to a realm of pure, handcrafted bliss.",
-      image: "src/assets/cap1-square.jpg",
+      image: cap1Square,
       currentPage: "03",
       totalPages: "03"
     }

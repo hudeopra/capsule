@@ -1,5 +1,8 @@
 import React from 'react'
 import "./fullSlider.css"
+import activities1 from "../../assets/activities-1.png"
+import activities2 from "../../assets/activities-2.png"
+import activities3 from "../../assets/activities-3.png"
 
 const FullSlider = () => {
   const activities = [
@@ -9,7 +12,7 @@ const FullSlider = () => {
       subtitle: "in the desert",
       tag: "Easy",
       description: "Explore the terrain on a guided buggy tour that takes you through the desert's vast and open landscapes.",
-      image: "src/assets/activities-1.png",
+      image: activities1,
       currentPage: "01",
       totalPages: "03"
     },
@@ -19,7 +22,7 @@ const FullSlider = () => {
       subtitle: "desert hikes",
       tag: "medium",
       description: "Set out on a hike that offers clear trails, stunning views, and a closer look at the unique desert environment.",
-      image: "src/assets/activities-2.png",
+      image: activities2,
       currentPage: "02",
       totalPages: "03"
     },
@@ -29,7 +32,7 @@ const FullSlider = () => {
       subtitle: "rock climbing",
       tag: "Hard",
       description: "Climbing session on natural sandstone formations, designed to be both challenging and safe while fostering teamwork.",
-      image: "src/assets/activities-3.png",
+      image: activities3,
       currentPage: "03",
       totalPages: "03"
     }
