@@ -1,0 +1,45 @@
+.hslider{
+
+    display: inline-flex;
+    gap: 10px;
+    margin: 10px
+}
+.hslider .box{
+    height: 100vh;
+    width: calc(50vw - 20px);
+    background-color: #2a2725;
+    border-radius: 30px;
+    position: relative;
+}
+
+.hslider h3{
+    font-size: 42px;
+    font-weight: 500;
+    color: rgb(177, 166, 150);
+    width: 420px;
+    line-height: 0.95;
+    padding: 40px 25px
+}
+.hslider .bottom{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+} 
+ .page span{
+    border: 1px solid white;
+    padding: 6px  10px;
+    border-radius: 20px;
+    opacity: .2;
+    
+}
+
+ .page span.active{
+    opacity: 1;
+}
+.hslider .bottom p{
+    width: 380px;
+}

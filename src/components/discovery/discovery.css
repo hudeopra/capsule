@@ -1,0 +1,49 @@
+.discovery{
+    margin: 30px;
+
+}
+.discovery span{
+}
+.discovery h2{
+    font-size: 185px;
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 30px 0 60px;
+}
+.discovery-content{
+    display: flex;
+    gap: 120px;
+    align-items: start;
+}
+.levels{
+    width: 100%;
+}
+.level-title{
+    display: flex;justify-content: space-between;
+    color: rgb(177, 166, 150);
+    margin: 20px 0;
+}
+
+.level-title h4{
+    font-size: 28px;
+    font-weight: 400;
+}
+.level-bar{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(244, 239, 231, 0.2);
+    position: relative;
+}
+.bar-level{
+    position: absolute;
+    background-color: #f4efe7;
+    height: 2px;
+
+}
+.discovery-message p{
+    font-size: 40px;
+    color: rgb(177, 166, 150);
+
+    width: 50vw;
+    line-height: 1;
+}

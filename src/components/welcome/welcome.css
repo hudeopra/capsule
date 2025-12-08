@@ -1,12 +1,13 @@
 .welcome {
-  margin: 60px 30px;
+  margin: 120px 30px;
   position: relative;
 }
 
 .welcome h2 {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 400;
-  max-width: calc(100% - 60px);
+  width: 90%;
+  padding: 140px 40px;
 }
 .welcome p {
   font-size: 42px;

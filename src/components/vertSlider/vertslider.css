@@ -1,0 +1,53 @@
+.vslider {
+    position: relative;
+}
+.vslider .fixed-scroll{
+    position: sticky;
+    top: 0%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    font-size: 40px;
+    color: rgb(244, 239, 231);
+}
+.vslider .slider-item{
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+  border-radius: 30px;
+  margin: 10px;
+
+}
+
+.vslider h3{
+    font-size: 80px;    
+    font-weight: 400;
+    color: rgb(244, 239, 231);
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY( -50%);
+}
+.vslider .button{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 20px;
+}
+.vslider span.icon{
+    display: block;
+    height: 42px;
+    width: 42px;
+    padding: 14px;
+    background-color: rgb(244, 239, 231);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vslider .button p{
+    max-width: 460px;
+}

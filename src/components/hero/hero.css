@@ -7,11 +7,10 @@
   position: relative;
 }
 
-.hero h1 {
-  font-size: 64px;
-  font-weight: 600;
+.hero h1 svg{
+  width: 60vw;
 }
-.top {
+.hero .top {
   display: flex;
   justify-content: space-between;
 }
@@ -19,7 +18,7 @@
   width: 16px;
   height: 16px;
 }
-.button {
+.hero  .button {
   max-width: 250px;
   height: 54px;
   background-color: white;
@@ -28,21 +27,22 @@
   color: #1f1d1c;
   display: inline-block;
 }
-.button.reserve {
+.hero  .button.reserve {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  align-items: center;
 }
-.button.menu {
-  position: absolute;
+.hero  .button.menu {
+  position: fixed;
   left: 50%;
   bottom: 50px;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  z-index: 5;
 }
-.button.menu span {
+.hero  .button.menu span {
   background-color: #1f1d1c;
   border-radius: 50%;
   height: 30px;
@@ -51,7 +51,7 @@
   position: relative;
 }
 
-.button.menu svg {
+.hero  .button.menu svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,10 +63,11 @@ svg {
 .fixed {
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
+  z-index: 5;
 }
-.bottom {
+.hero .bottom {
   position: absolute;
   bottom: 30px;
   width: calc(100% - 60px);
@@ -74,12 +75,12 @@ svg {
   justify-content: space-between;
   align-items: end;
 }
-.bottom p {
+.hero .bottom p {
   font-size: 24px;
   font-weight: 500;
   max-width: 180px;
 }
-.bottom span {
+.hero .bottom span {
   font-weight: 600;
   max-width: 320px;
   text-align: right;

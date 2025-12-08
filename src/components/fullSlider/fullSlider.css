@@ -1,0 +1,39 @@
+.full-slider{
+    display: inline-flex;
+}
+.image-wrapper{
+    width: calc(100vw - 35px);
+    height: calc(100vh - 35px);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 40px 25px;
+    position: relative;
+}
+
+
+.full-slider h3{
+    font-size: 40px;
+    line-height: 1;
+}
+
+.full-slider .tag{
+    padding: 4px 10px;
+    border: 1px solid rgb(244, 239, 231);
+    border-radius: 12px;
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+
+.full-slider .bottom{
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+}
+
+.full-slider p{
+    font-weight: 500;
+    width: 420px;
+}

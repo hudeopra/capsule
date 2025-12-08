@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Host Grotesk", sans-serif;
 }
 body {
   background-color: #1f1d1c;
-  color: #fff;
-  line-height: 1.2;
+    color: rgb(244, 239, 231);
 }
 a {
   text-decoration: none;
@@ -18,5 +17,5 @@ ul {
   list-style: none;
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
