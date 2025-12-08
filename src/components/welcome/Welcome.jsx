@@ -1,6 +1,6 @@
 import welcomeOne from "../../assets/about-1.png";
 import welcomeTwo from "../../assets/about-2.png";
-import "./Welcome.css";
+import "./welcome.css";
 
 const Welcome = () => {
   return (
