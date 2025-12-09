@@ -13,7 +13,7 @@
 }
 .location h2{
     text-align: center;
-    font-size: clamp(5vw, 7vw, 10vw);
+    font-size: clamp(4vw, 5vw, 10vw);
     color: rgb(244, 239, 231);
     font-weight: 400;
 }
