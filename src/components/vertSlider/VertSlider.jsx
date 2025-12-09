@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './vertslider.css'
 import banner from "../../assets/banner.png"
 import cap2 from "../../assets/cap2.png"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const VertSlider = () => {
     const sliderData = [
@@ -25,6 +29,28 @@ const VertSlider = () => {
         }
     ];
 
+    useEffect(() => {
+        const vsliders = gsap.utils.toArray('.slider-item');
+
+        vsliders.forEach((message) => {
+        // Loop creates individual ScrollTrigger for each card
+            ScrollTrigger.create({
+                trigger: message,
+                start: 'top top',
+                pin: true,
+                pinSpacing: false,
+                endTrigger: '.vslider',
+                end: 'bottom bottom',                
+                // markers: true,
+                id: 'card-',  
+            });
+        });
+
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []);
+
   return (
     <div>
         <section className="vslider">
@@ -34,6 +60,8 @@ const VertSlider = () => {
 
                 </span>
             </div>
+            <div className="vsliders">
+                
             {sliderData.map((item) => (
                 <div 
                     key={item.id}
@@ -51,6 +79,7 @@ const VertSlider = () => {
                     </div>
                 </div>
             ))}
+            </div>
         </section>
     </div>
   )

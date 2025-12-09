@@ -159,7 +159,7 @@ nav a{
 .ham-menu-right img{
   min-width: 30vw;
   width: 100%;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 55px);
   object-fit: cover;
   object-position: center center;
   border-radius: 25px;
