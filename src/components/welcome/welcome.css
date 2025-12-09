@@ -1,0 +1,37 @@
+.welcome {
+  margin: 60px 30px;
+  position: relative;
+}
+
+.welcome h2 {
+  font-size: 60px;
+  font-weight: 400;
+  max-width: calc(100% - 60px);
+}
+.welcome p {
+  font-size: 42px;
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: end;
+  margin: 60px 0;
+}
+.welcome-img {
+  display: flex;
+}
+.welcome-img img {
+  border-radius: 10vw;
+  width: 15vw;
+}
+
+.welcome-message {
+  max-width: 40vw;
+}
+.discover {
+  position: absolute;
+  font-weight: 9px;
+  font-weight: 600;
+}
