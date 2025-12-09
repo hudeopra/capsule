@@ -7,7 +7,6 @@ import Location from "./components/location/Location";
 import HSlider from "./components/hslider/HSlider";
 import Discovery from "./components/discovery/Discovery";
 import FullSlider from "./components/fullSlider/FullSlider"
-import Review from "./components/review/Review"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
 
@@ -24,7 +23,6 @@ function App() {
       <HSlider />
       <Discovery />
       <FullSlider />
-      <Review />
       <Hero variant="center" />
       <Contact />
       <Footer />
