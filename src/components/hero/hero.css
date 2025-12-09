@@ -4,6 +4,7 @@
   border-radius: 30px;
   padding: 30px;
   position: relative;
+  margin: 10px;
 }
 
 .hero h1 svg{
@@ -34,12 +35,12 @@
 .hero  .button.menu {
   position: fixed;
   left: 50%;
-  bottom: 50px;
+  bottom: 40px;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 10px;
-  z-index: 5;
+  z-index: 10;
 }
 .hero  .button span {
   background-color: #1f1d1c;
@@ -64,7 +65,7 @@ svg {
   right: 0;
   top: 35%;
   transform: translateY(-50%);
-  z-index: 5;
+  z-index: 10;
 }
 .hero .bottom {
   position: absolute;
@@ -97,5 +98,68 @@ display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
+.ham-menu{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #2a2725;
+  border-radius: 30px;
+  padding: 10px;
+  z-index: 6;
+}
+.contact-icons ul{
+    display: flex;
+}
+
+.contact-icons li{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #b1a696;
+    border-radius: 50%;
+    display: flex;justify-content: center;align-items: center;
+}
+
+.contact-icons svg{
+    height: 24px;
+    width: 24px;
+}
+.hero .footer,.ham-meu-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.ham-menu-left{
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+nav a{
+ font-size: 6vw;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.footer p{
+  font-size: 18px;
+  color: #b1a696;
+  font-weight: 600;
+}
+.ham-menu-right{
+  width: 30vw;
+}
+.ham-menu-right img{
+  min-width: 30vw;
+  width: 100%;
+  height: calc(100vh - 40px);
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 25px;
 }

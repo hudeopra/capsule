@@ -3,7 +3,7 @@ import reviewTwo from "../../assets/review2.png";
 import reviewThree from "../../assets/review3.png";
 import "./review.css"
 
-const review = () => {
+const Review = () => {
   const reviewData = [
     {
       id: 1,
@@ -64,4 +64,4 @@ const review = () => {
   );
 };
 
-export default review;
+export default Review;
