@@ -11,6 +11,7 @@
 .review h2{
     
     font-size: 80px;
+    font-size: clamp(24px, 8vw, 80px);
     font-weight: 400;
     width: 90%;
     color: #f4efe7;

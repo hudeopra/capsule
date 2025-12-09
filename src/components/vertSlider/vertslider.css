@@ -8,7 +8,7 @@
     transform: translate(-50%, -50%);
     z-index: 5;
 
-    font-size: 40px;
+    font-size: clamp(16px, 6vw, 40px);
     color: rgb(244, 239, 231);
 }
 .vslider .slider-item{
@@ -21,7 +21,7 @@
 }
 
 .vslider h3{
-    font-size: 80px;    
+    font-size: clamp(28px, 6vw, 80px);    
     font-weight: 400;
     color: rgb(244, 239, 231);
     position: absolute;
@@ -35,6 +35,7 @@
     left: 30px;
     transform: translateY(-50%);
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 .vslider span.icon{
@@ -50,4 +51,5 @@
 }
 .vslider .button p{
     max-width: 460px;
+    font-size: clamp(8px, 2vw, 16px);
 }

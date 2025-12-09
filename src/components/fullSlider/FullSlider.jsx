@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./fullSlider.css"
 import activities1 from "../../assets/activities-1.png"
 import activities2 from "../../assets/activities-2.png"
 import activities3 from "../../assets/activities-3.png"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const FullSlider = () => {
   const activities = [
@@ -38,6 +42,24 @@ const FullSlider = () => {
     }
   ];
 
+  useEffect(() => {
+    gsap.to('.full-slider', {
+      xPercent: -67,
+      scrollTrigger: {
+        trigger: '.full-slider',
+        start: 'top 0%',
+        end: 'bottom -0%',
+        scrub: true,
+        // markers: true,
+        pin: true,
+      }
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+
   return (
     <div>
         <section className='full-slider'>
@@ -70,4 +92,3 @@ const FullSlider = () => {
 }
 
 export default FullSlider
-                   

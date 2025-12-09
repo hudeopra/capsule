@@ -13,13 +13,15 @@
     background-color: #2a2725;
     border-radius: 30px;
     position: relative;
+    object-fit: cover;
 }
 
 .hslider h3{
     font-size: 42px;
+    font-size: clamp(18px, 6vw, 42px);
     font-weight: 500;
     color: rgb(177, 166, 150);
-    width: 420px;
+    max-width: 420px;
     padding: 40px 25px
 }
 .hslider .bottom{

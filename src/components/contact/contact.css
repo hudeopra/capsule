@@ -13,6 +13,7 @@
 .contact-body p{
     color: #b1a696;
     font-size: 34px;
+    font-size: clamp(16px, 5vw, 34px);
     margin-bottom: 30px;
 }
 
@@ -35,9 +36,14 @@
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: end;
     padding: 0 25px 60px;
     border-bottom: 1px solid #b1a696;
+}
+
+.contact .bottom p{
+    margin-top: 30px;
 }
 .contact-icons ul{
     display: flex;

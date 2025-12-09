@@ -5,6 +5,9 @@
 .footer-content{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+
 }
 .footer-img svg{
     width: calc(100vw - 50px);
