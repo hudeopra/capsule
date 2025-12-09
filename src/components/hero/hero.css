@@ -101,11 +101,11 @@ display: none;
 }
 
 .ham-menu{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
   background-color: #2a2725;
   border-radius: 30px;
   padding: 10px;
@@ -139,7 +139,7 @@ display: none;
 nav a{
  font-size: 6vw;
 }
-.footer{
+.hero .footer{
   position: absolute;
   bottom: 0;
   display: flex;
@@ -147,7 +147,8 @@ nav a{
   align-items: center;
   gap: 60px;
 }
-.footer p{
+
+.hero .footer p{
   font-size: 18px;
   color: #b1a696;
   font-weight: 600;
