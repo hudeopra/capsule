@@ -1,7 +1,12 @@
+import React, { useEffect } from 'react'
 import './hslider.css'
 import cap1Square from "../../assets/cap1-square.jpg"
 import cap2Square from "../../assets/cap2-square.jpg"
 import cap3Square from "../../assets/cap3-square.jpg"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const HSlider = () => {
   const sliderData = [
@@ -31,8 +36,26 @@ const HSlider = () => {
     }
   ];
 
+  useEffect(() => {
+    gsap.to('.hslider', {
+      xPercent: -60,
+      scrollTrigger: {
+        trigger: '.hslider',
+        start: 'top 0%',
+        end: 'bottom -0%',
+        scrub: true,
+        // markers: true,
+        pin: true,
+      }
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+
   return (
-    <div >
+    <div>
       <section className="hslider">
         {sliderData.map((item, index) => (
           <div key={item.id} className="item-wrapper">
