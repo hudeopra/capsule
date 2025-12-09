@@ -1,0 +1,57 @@
+.contact{
+    padding: 40px 25px;
+    position: relative;
+}
+.contact h2{
+    font-size: 10vw;
+    margin: 60px 0;
+}
+.contact-body{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-body p{
+    color: #b1a696;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.contact-body p a{
+    color: #f4efe7;
+}
+.contact-info{
+    width: 40vw;
+}
+.contact-menu li{
+    
+    font-size: 34px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.contact .bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 25px 60px;
+    border-bottom: 1px solid #b1a696;
+}
+.contact-icons ul{
+    display: flex;
+}
+
+.contact-icons li{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #b1a696;
+    border-radius: 50%;
+    display: flex;justify-content: center;align-items: center;
+}
+
+.contact-icons svg{
+    height: 24px;
+    width: 24px;
+}

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Host Grotesk", sans-serif;
+  line-height: 1;
 }
 body {
   background-color: #1f1d1c;

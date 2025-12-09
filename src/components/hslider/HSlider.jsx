@@ -1,4 +1,3 @@
-import React from "react";
 import './hslider.css'
 import cap1Square from "../../assets/cap1-square.jpg"
 import cap2Square from "../../assets/cap2-square.jpg"
@@ -36,7 +35,7 @@ const HSlider = () => {
     <div >
       <section className="hslider">
         {sliderData.map((item, index) => (
-          <React.Fragment key={item.id}>
+          <div key={item.id} className="item-wrapper">
             <div className="item box">
               <h3>{item.title}</h3>
               <div className="bottom">
@@ -48,7 +47,7 @@ const HSlider = () => {
               </div>
             </div>
             {index < sliderData.length - 1 && <img className="box" src={item.image} alt="" />}
-          </React.Fragment>
+          </div>
         ))}
       </section>
     </div>

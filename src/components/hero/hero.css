@@ -1,5 +1,4 @@
 .hero {
-  background-image: url("../../assets/banner.png");
   background-size: cover;
   height: 100vh;
   border-radius: 30px;
@@ -42,7 +41,7 @@
   gap: 10px;
   z-index: 5;
 }
-.hero  .button.menu span {
+.hero  .button span {
   background-color: #1f1d1c;
   border-radius: 50%;
   height: 30px;
@@ -51,7 +50,7 @@
   position: relative;
 }
 
-.hero  .button.menu svg {
+.hero  .button svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -76,12 +75,27 @@ svg {
   align-items: end;
 }
 .hero .bottom p {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 500;
-  max-width: 180px;
+  max-width: 220px;
 }
 .hero .bottom span {
   font-weight: 600;
   max-width: 320px;
   text-align: right;
+}
+
+.hero.center .reserve{
+display: none;
+}
+
+.hero.center {
+  position: relative;
+}
+.hero.center h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }

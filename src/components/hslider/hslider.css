@@ -4,6 +4,9 @@
     gap: 10px;
     margin: 10px
 }
+.hslider .item-wrapper{
+    display: contents;
+}
 .hslider .box{
     height: 100vh;
     width: calc(50vw - 20px);
@@ -17,7 +20,6 @@
     font-weight: 500;
     color: rgb(177, 166, 150);
     width: 420px;
-    line-height: 0.95;
     padding: 40px 25px
 }
 .hslider .bottom{
